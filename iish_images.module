@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * IISH images
+ * Add image view modes images edited in wysiwyg-enabled text.
+ */
+
+/**
+ * Implements hook_entity_info_alter().
+ *
+ * Add view modes to the file entity type, appropriate for displaying media.
+ */
+function iish_images_entity_info_alter(&$entity_info) {
+  $entity_info['file']['view modes']['media_thumbnail'] = array('label' => t('Thumbnail'), 'custom settings' => TRUE);
+  $entity_info['file']['view modes']['media_medium'] = array('label' => t('Medium'), 'custom settings' => TRUE);
+}

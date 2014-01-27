@@ -1,0 +1,6 @@
+name = IISH Images
+description = Custom view modes for media
+core = 7.x
+dependencies[] = media
+version = "7.x-1.0"
+
